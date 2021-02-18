@@ -44,7 +44,7 @@ class Student extends React.Component{
     }
 
     render(){
-        const {id, admissionNo, name, address, contactNo} = this.state
+        const {id, admissionNo, name, address, contactNo} = this.state;
         return(
             <React.Fragment>
                 <form onSubmit={this.submitEvent}>
@@ -75,7 +75,7 @@ class Student extends React.Component{
                         </fieldset>
                     </div>
                     <div className="col-3">
-                    <input className="btn btn-success" type="submit" value="Submit" />
+                    <input  className="btn btn-success" type="submit" value="Submit" />
                     </div>    
                     
                     </div>
