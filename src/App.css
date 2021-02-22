@@ -40,3 +40,7 @@
 .content-panel{
   padding:30px;
 }
+
+.hide{
+  visibility: hidden;
+}

@@ -14,7 +14,11 @@ class Student extends React.Component{
 
         this.changeEvent = this.changeEvent.bind(this);
         this.submitEvent = this.submitEvent.bind(this);
+
     }
+
+    
+ 
 
     changeEvent(event){
         this.setState({[event.target.name] : event.target.value});
@@ -24,7 +28,7 @@ class Student extends React.Component{
         event.preventDefault();
         let studentObj = this.state;
         console.log(this.state);
-        if(studentObj.id == 0){
+        if(studentObj.id === 0){
             studentObj.id = null;
         } 
         StudentService.updateStudent(studentObj).then(res =>{

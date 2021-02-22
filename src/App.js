@@ -1,10 +1,13 @@
-import logo from './logo.svg';
+
+import React from 'react';
 import './App.css';
-import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Nav from './components/common/nav.js';
-import Student from './components/student/student';
+import Notification from './components/common/notification.js';
+// import Student from './components/student/student';
 import StudentB from './components/student/studentB';
 import StudentList from './components/student/studentlist';
+import SampleComponent from './components/student/temp';
 
 
 function App() {
@@ -18,8 +21,12 @@ function App() {
         <Route exact path="/student/:id" component={StudentB} />
       </div>
       </Router>
+      <SampleComponent />
+      <Notification />
     </div>
   );
 }
 
+
 export default App;
+

@@ -15,8 +15,8 @@ class Nav extends React.Component{
         const {activeMenu} = this.state;
         return (
             <div className="topnav">
-                <Link to="/" className={(activeMenu == 'Home') ? 'active' : '' } name="Home" onClick={this.menuClicked}>Home</Link>
-                <Link to="/student" className={(activeMenu == 'Student') ? 'active' : '' } name="Student" onClick={this.menuClicked}>Student</Link>
+                <Link to="/" className={(activeMenu ==='Home') ? 'active' : '' } name="Home" onClick={this.menuClicked}>Home</Link>
+                <Link to="/student" className={(activeMenu === 'Student') ? 'active' : '' } name="Student" onClick={this.menuClicked}>Student</Link>
             </div>
         )
     }
